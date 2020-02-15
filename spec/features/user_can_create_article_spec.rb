@@ -1,10 +1,11 @@
 feature 'User can create articles' do
-    before do 
-        visit articles_index_path
-    end
+    # before do 
+    #     visit articles_index_path
+    # end
 
     context 'Successfully create an article' do 
         before do 
+            visit new_article_path
             click_on 'New Article'
             fill_in 'Title', with: 'Happy holidays'
             fill_in 'Content', with: 'Buy your gifts now'
