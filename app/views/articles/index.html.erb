@@ -1,20 +1,12 @@
 <h1>All Articles</h1>
 <table>
     <%= link_to 'New Article', new_article_path %> 
-    <tr>
-        <th>Title</th>
-    </tr>
+    <h3> Title </h3>
     <% @articles.each do |article| %>
-    <ul>
-        <li>
-            <%= link_to article.title, article_path(article) %><br/>
-        </li>
-    </ul>
         <tr>
-            <%= link_to 'Edit', edit_article_path(article) %>
-        </tr>
-        <tr>
-            <%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }%><br>
+            <td><%= link_to article.title, article_path(article) %></td>
+            <td><%= link_to 'Edit', edit_article_path(article) %></button></td>
+            <td><%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }%><td>
         </tr>
         <% end %> 
     
