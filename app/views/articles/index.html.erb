@@ -1,10 +1,8 @@
 <h1>All Articles</h1>
 <table>
-    <%= link_to 'New Article', new_article_path %> </button>
-    <tr>
-        <th>Title</th>
-    </tr>
-        <% @articles.each do |article| %>
+    <%= link_to 'New Article', new_article_path %> 
+    <h3> Title </h3>
+    <% @articles.each do |article| %>
         <tr>
             <td><%= link_to article.title, article_path(article) %></td>
             <td><%= link_to 'Edit', edit_article_path(article) %></button></td>
@@ -13,4 +11,11 @@
         <% end %> 
 </table>
 
+<<<<<<< HEAD
  
+=======
+
+
+ 
+  
+>>>>>>> 2311ff762abe79aac4a20292843f9e9b362b852f
