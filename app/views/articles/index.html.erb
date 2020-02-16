@@ -11,10 +11,10 @@
         </li>
     </ul>
         <tr>
-            <button><%= link_to 'Edit', edit_article_path(article) %></button>
+            <%= link_to 'Edit', edit_article_path(article) %>
         </tr>
         <tr>
-            <button><%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }%><br></button>
+            <%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }%><br>
         </tr>
         <% end %> 
     
