@@ -11,10 +11,13 @@ feature 'User can create articles' do
             click_on 'Save Article'
         end
     
-        it 'User should bee article on show page' do
-            visit articles_path
-            article = Article.find_by(title: 'Happy holidays')
-            expect(current_path).to eq articles_path(article)
+        it 'User should be on article on show page' do
+            article = Article.find_by(content: 'Buy your gifts now')
+            expect(current_path).to eq article_path(article)
         end 
+
+        it 'User should see success message' do 
+            expect(page).to have_content 'Article was successfully created.'
+        end
     end
 end
