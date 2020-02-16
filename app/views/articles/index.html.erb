@@ -1,6 +1,6 @@
 <h1>All Articles</h1>
 <table>
-    <%= link_to 'New Article', new_article_path %> </button>
+    <%= link_to 'New Article', new_article_path %> 
     <tr>
         <th>Title</th>
     </tr>
@@ -10,7 +10,7 @@
             <%= link_to article.title, article_path(article) %><br/>
         </li>
         <li>
-            <%= link_to 'Edit', edit_article_path(article) %></button>
+            <%= link_to 'Edit', edit_article_path(article) %>
         </li>
         <li>
             <%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }%>
