@@ -1,35 +1,23 @@
-## My first Ruby on Rails project
+### Authors
+[Emma-Maria Thalen](https://github.com/emtalen)  
+
+## Built with
+**Front End:** Rails v.6.0.2.1 | Ruby 2.6.3 
+**Testing framework:** Rspec  
+**Deployed at:** -
+
+## The code   
 This is the first project that I have done in Ruby on Rails and the main focus was to understand the architecture of Rails and how the different parts work together. 
 
 The project it self is to build a website where the user can create, read, edit and also delete articles. The user does not have to log in to use the website. 
 
-#### User stories
-As a user
-In order to see all articles
-I would like to see a list of all articles on the index page
-
-As a user
-In order to add an article of my own
-I would like to be able to create a new article
-
-As a user
-In order to read the content of an article
-I would like to be able to show the article
-
-As a user
-In order to updatean existing article
-I would like to be able to edit articles
-
-As a user
-In order to remove an article
-I would like to be able to delete articles
-
-### Dependencies 
-This application is created in Ruby on Rails using Ruby for backend language and html.erb for the frontend. 
-I have also used Rspec with Capybara to test the application. 
-
-* Ruby version 2.6.3
-* Rails version 6.0.2.1
+## Getting Started
+### Dependencies  
+* rspec-rails
+* shoulda-matchers
+* factory_bot_rails
+* capybara
+* coveralls
 
 ### Setup
 To run this application you should do following steps:
@@ -49,8 +37,8 @@ Start the rails server localy
 
 Then you can visit the application in your browser by typing in "localhost:3000" and try out the functionalities. 
 
-### Updates and improvement plans
-What needs to be in improved is the frontend to make it prettier and more user friendly. What I would like to update is that the user needs to login and by that every article written or updated by the user would be signed with the username. With that kind of feature I would also like to add that a user only can delete articles which is created by the user and that it's not possible to delete other users articles, only edit them. 
+## License  
+[MIT-license](https://en.wikipedia.org/wiki/MIT_License)
 
-### License:
-##### MIT-Licence
+### Acknowledgement  
+- Material provided by [Craft Academy](https://craftacademy.se)
